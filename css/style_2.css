@@ -1,0 +1,36 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    overflow: hidden; /* Remove rolagem */
+}
+
+#fundo {
+    background-image: url("../images/BG.png");
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#base {
+    background-image: url("../images/Base.png");
+    background-size: contain;
+    height: 100vh;
+    width: auto;
+}
+
+#base td {
+    width: calc(100vh / 3);
+    height: calc(100vh / 3);
+}
+
+#base td img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}

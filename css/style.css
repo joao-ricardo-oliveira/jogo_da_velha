@@ -1,0 +1,99 @@
+html {
+    background-image: url("../images/BG.png");
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#fundo {
+    display: flex;
+    height: 100%;
+}
+
+#base {
+    background-image: url("../images/Base.png");
+    background-size: contain;
+    border-collapse: collapse;
+    position: relative;
+}
+
+#base td {
+    height: calc((100vh / 3) - 20px);
+}
+
+img {
+    height: 100%;
+    object-fit: contain;
+}
+
+.linha {
+    clip-path: inset(0 100% 0 0);
+    transition: clip-path 1s ease;
+}
+
+.coluna {
+    clip-path: inset(0 0 100% 0);
+    transition: clip-path 1s ease;
+}
+
+#linha1 {
+    height: calc(100vh - 60px);
+    display: flex;
+    position:absolute;
+    z-index: 1;
+}
+
+#linha2 {
+    height: calc(100vh - 60px);
+    display: flex;
+    position:absolute;
+    z-index: 2;
+}
+
+#linha3 {
+    height: calc(100vh - 60px);
+    display: flex;
+    position:absolute;
+    z-index: 3;
+}
+
+#coluna1 {
+    height: calc(100vh - 60px);
+    display: flex;
+    position:absolute;
+    z-index: 4;
+}
+
+#coluna2 {
+    height: calc(100vh - 60px);
+    display: flex;
+    position:absolute;
+    z-index: 5;
+}
+
+#coluna3 {
+    height: calc(100vh - 60px);
+    display: flex;
+    position:absolute;
+    z-index: 6;
+}
+
+#diagonalPrincipal {
+    height: calc(100vh - 60px);
+    display: flex;
+    position:absolute;
+    z-index: 7;
+    clip-path: inset(0 100% 100% 0);
+    transition: clip-path 1.4s ease;
+}
+
+#diagonalSecundaria {
+    height: calc(100vh - 60px);
+    display: flex;
+    position:absolute;
+    z-index: 8;
+    clip-path: inset(0 0 100% 100%);
+    transition: clip-path 1.4s ease;
+}
